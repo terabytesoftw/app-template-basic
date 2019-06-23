@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/terabytesoft/app-basic" target="_blank">
+    <a href="https://github.com/terabytesoftw/app-template-basic" target="_blank">
         <img src="https://lh3.googleusercontent.com/D9TFw1F6ddPuheDc_tpNptTdvTg-FNNpjLSBN14X6Sc-3JDiOxfE67rEh4OZfygonx1tKei2b2DEOHDLjF6T3xl8e-rkEEPZeGqLTWcS_v2cBRlyo0vcZLDHG5ivSDGIWCsenbol=w2400" height="50px;">
     </a>
     <h1 align="center">Project Skeleton Application Basic</h1>
@@ -25,7 +25,7 @@
 </br>
 
 <p align="justify">
-<strong>Yii 2.0 Web Project Skeleton Application Basic</strong>, is the structure for <strong>Yii 3.0 Web Application Basic</strong>, this allows you to update the <strong>Web Application Basic</strong> without having to re-install, all the details of your installation, configuration and start-up at <a href="https://github.com/terabytesoftw/app-basic" title="Yii 2.0 Web Project Skeleton Application Basic" target="_blank">Yii 2.0 Web Project Skeleton Application Basic</a>
+<strong>Yii 2.0 Web Project Skeleton Application Basic</strong>, is the structure for <strong>Yii 2.0 Web Application Basic</strong>, this allows you to update the <strong>Web Application Basic</strong> without having to re-install, all the details of your installation, configuration and start-up at <a href="https://github.com/terabytesoftw/app-template-basic" title="Yii 2.0 Web Project Skeleton Application Basic" target="_blank">Yii 2.0 Web Project Skeleton Application Basic</a>
 </p>
 
 </br>
@@ -64,4 +64,4 @@ $ vendor/bin/codecept run
 
 [![License](https://poser.pugx.org/terabytesoftw/app-template-basic/license)](LICENSE.md)
 [![YiiFramework](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
-[![Total Downloads](https://poser.pugx.org/terabytesoftw/app-template-basic/downloads)](https://packagist.org/packages/terabytesoft/app-basic)
+[![Total Downloads](https://poser.pugx.org/terabytesoftw/app-template-basic/downloads)](https://packagist.org/packages/terabytesoftw/app-template-basic)
