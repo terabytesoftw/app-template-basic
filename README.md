@@ -43,9 +43,32 @@ tests/              contains tests codeception
 vendor/             contains dependent 3rd-party packages
 ```
 
+### **GENERATE MESSAGES TRANSLATION:**
+
+<p align="justify">
+To generate the Yii 2.0 Web Application Basic translations, you can change the language settings in:
+<p>
+
+```
+config/messages.php - [app-template-basic]:
+
+'languages' => ['en'], 
+```
+<p align="justify">
+ Automatically the generator will create the folder of your language in /messages - [app-template-basic], If any translation is needed, you can open an issue to add it.
+</p>
+
+```
+root directory - [app-template-basic]:
+ ./vendor/bin/yii message config/messages.php
+```
+
 ### **RUN TESTS CODECEPTION:**
 
 ~~~
+$ wget -P vendor/bin https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_linux64.zip
+$ unzip -o -q vendor/bin/chromedriver_linux64.zip
+$ vendor/bin/chromedriver --port=9515 --url-base=wd/hub/ > /dev/null 2>&1&
 $ php -S 127.0.0.1:8080 -t public > /dev/null 2>&1&
 $ vendor/bin/codecept run
 ~~~
