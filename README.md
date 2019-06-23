@@ -55,12 +55,12 @@ config/messages.php - [app-template-basic]:
 'languages' => ['en'], 
 ```
 <p align="justify">
- Automatically the generator will create the folder of your language in /messages - [app-template-basic], If any translation is needed, you can open an issue to add it.
+Automatically the generator will create the folder of your language in /messages - [app-template-basic], If any translation is needed, you can open an issue to add it.
 </p>
 
 ```
 root directory - [app-template-basic]:
- ./vendor/bin/yii message config/messages.php
+./vendor/bin/yii message config/messages.php
 ```
 
 ### **RUN TESTS CODECEPTION:**
