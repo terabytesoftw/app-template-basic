@@ -66,10 +66,15 @@ root directory - [app-template-basic]:
 ### **RUN TESTS CODECEPTION:**
 
 ~~~
+// download & run crhomedriver version chrome desktop
 $ wget -P vendor/bin https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_linux64.zip
 $ unzip -o -q vendor/bin/chromedriver_linux64.zip
 $ vendor/bin/chromedriver --port=9515 --url-base=wd/hub/ > /dev/null 2>&1&
+
+// run web server cli php
 $ php -S 127.0.0.1:8080 -t public > /dev/null 2>&1&
+
+// run all tests without coverage
 $ vendor/bin/codecept run
 ~~~
 
