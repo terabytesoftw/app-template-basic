@@ -90,6 +90,6 @@ $ vendor/bin/codecept run
 
 ### **LICENCE:**
 
-[![License](https://img.shields.io/github/license/terabytesoftw/app-basic.svg)](LICENSE.md)
+[![License](https://img.shields.io/github/license/terabytesoftw/app-template-basic.svg?color=%23148F77%20)](LICENSE.md)
 [![YiiFramework](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
 [![Total Downloads](https://img.shields.io/packagist/dt/terabytesoftw/app-basic.svg?color=blue)](https://packagist.org/packages/terabytesoftw/app-template-basic)
