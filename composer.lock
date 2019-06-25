@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "703136902cd2e1e52b7eb804280da3e2",
+    "content-hash": "27caa6af18aa8aedad99c495ef79728e",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -788,12 +788,13 @@
             "dist": {
                 "type": "path",
                 "url": "D:/git-local/terabytesoftw/app-basic",
-                "reference": "8a40edfc18c9e309cc2bb13ec8a9d5a2f29e167d",
+                "reference": "5d42c5823c44b662423df5d811b3f8325dde5df4",
                 "shasum": null
             },
             "require": {
                 "oomphinc/composer-installers-extender": "^1.1",
                 "php": ">=5.4.0",
+                "terabytesoftw/widget-alert": "^1.0@dev",
                 "yiisoft/yii2": "^2.0.20",
                 "yiisoft/yii2-bootstrap4": "^2.0.3",
                 "yiisoft/yii2-swiftmailer": "^2.1.0"
@@ -804,7 +805,6 @@
                 "codeception/specify": "*",
                 "codeception/verify": "*",
                 "dms/phpunit-arraysubset-asserts": "^0.1.0",
-                "foxy/foxy": "^1.0",
                 "hiqdev/composer-config-plugin": "^1.0@dev",
                 "monolog/monolog": "*",
                 "yiisoft/yii2-debug": "~2.1.0",
@@ -814,7 +814,7 @@
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-                    "1.0": "1.0.x-dev"
+                    "dev-master": "1.0.x-dev"
                 },
                 "config-plugin": {
                     "params": [
@@ -856,7 +856,7 @@
                     "email": "wilmer.arambula@gmail.com"
                 }
             ],
-            "description": "Yii 2.0 Web Application Basic",
+            "description": "Web Application Basic",
             "homepage": "https://github.com/terabytesoftw/app-basic",
             "keywords": [
                 "application",
@@ -864,6 +864,73 @@
                 "web",
                 "yii"
             ]
+        },
+        {
+            "name": "terabytesoftw/widget-alert",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/terabytesoftw/widget-alert.git",
+                "reference": "d22dfeb6806012a376a7c29972a12dc4d1939a53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/terabytesoftw/widget-alert/zipball/d22dfeb6806012a376a7c29972a12dc4d1939a53",
+                "reference": "d22dfeb6806012a376a7c29972a12dc4d1939a53",
+                "shasum": ""
+            },
+            "require": {
+                "oomphinc/composer-installers-extender": "^1.1",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "^2.0.20",
+                "yiisoft/yii2-bootstrap4": "^2.0.3"
+            },
+            "require-dev": {
+                "codeception/c3": "2.*",
+                "codeception/codeception": "^3.0",
+                "hiqdev/composer-config-plugin": "^1.0@dev",
+                "monolog/monolog": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "installer-types": [
+                    "bower-asset",
+                    "npm-asset"
+                ],
+                "installer-paths": {
+                    "./node_modules/{$name}": [
+                        "type:bower-asset",
+                        "type:npm-asset"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "terabytesoft\\widgets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Wilmer Arambula",
+                    "email": "wilmer.arambula@gmail.com"
+                }
+            ],
+            "description": "Widget Alert with Bootstrap4",
+            "homepage": "https://github.com/terabytesoftw/alert",
+            "keywords": [
+                "alert",
+                "bootstrap4",
+                "widget",
+                "yii"
+            ],
+            "time": "2019-06-25T12:46:10+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -1651,66 +1718,6 @@
                 "webdriver"
             ],
             "time": "2019-06-13T08:02:18+00:00"
-        },
-        {
-            "name": "foxy/foxy",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fxpio/foxy.git",
-                "reference": "341d972df15f38efd5eaa505dd63aa4116655a7c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fxpio/foxy/zipball/341d972df15f38efd5eaa505dd63aa4116655a7c",
-                "reference": "341d972df15f38efd5eaa505dd63aa4116655a7c",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1",
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "composer/composer": "^1.5.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Foxy\\Foxy",
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Foxy\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Pluchino",
-                    "email": "francois.pluchino@gmail.com"
-                }
-            ],
-            "description": "Fast, reliable, and secure NPM/Yarn bridge for Composer",
-            "homepage": "https://github.com/fxpio/foxy",
-            "keywords": [
-                "Bridge",
-                "asset",
-                "composer",
-                "dependency manager",
-                "nodejs",
-                "npm",
-                "package",
-                "yarn"
-            ],
-            "time": "2019-05-17T17:18:57+00:00"
         },
         {
             "name": "fzaninotto/faker",

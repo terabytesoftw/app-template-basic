@@ -21,7 +21,7 @@
     "require": {
         "php": ">=5.4.0",
         "oomphinc/composer-installers-extender": "^1.1",
-        "terabytesoftw/app-basic": "@dev"
+        "terabytesoftw/app-basic": "^1.0@dev"
     },
     "require-dev": {
         "codeception/codeception": "^3.0",
@@ -49,7 +49,7 @@
     },
     "extra": {
         "branch-alias": {
-            "1.0": "1.0.x-dev"
+            "dev-master": "1.0.x-dev"
         },
         "config-plugin": {
             "params": [
