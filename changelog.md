@@ -1,8 +1,12 @@
-Yii 3.0 Web Application Basic Change Log
-========================================
+Yii 2.0 App Template Basic Change Log
+=====================================
 
-0.0.1 under development
+1.0.0 under development
 -----------------------
 
-- (#2) Web Application Basic (config, docs, assets, commands, controllers, forms, mail, models, views)
+- (#2) App Template Basic: (terabytesoftw).
+  - config
+  - messages
+  - public
+  - tests
 - (#1) Init Repositorie - (terabytesoftw).
