@@ -1,7 +1,8 @@
 language: php
 
 php:
-  - 7.3
+  - '7.2'
+  - '7.3'
 
 dist: trusty
 
@@ -49,11 +50,4 @@ script:
   - |
     php -S 127.0.0.1:8080 -t public > /dev/null 2>&1&
     vendor/bin/codecept build
-    vendor/bin/codecept run --coverage-xml
-
-after_script:
-  - |
-    if [ $TRAVIS_PHP_VERSION = '7.3' ]; then
-      travis_retry wget https://scrutinizer-ci.com/ocular.phar
-      php ocular.phar code-coverage:upload --format=php-clover tests/_output/coverage.xml
-    fi
+    vendor/bin/codecept run
