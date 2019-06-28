@@ -1,18 +1,28 @@
 <?php
 
-use hiqdev\composer\config\Builder;
-use yii\web\Application;
+/**
+ * Yii web bootstrap file
+ */
 
-include '../c3.php';
+$autoload = dirname(getcwd(), 1) . '/vendor/autoload.php';
+$yii2 = dirname(getcwd(), 1) . '/vendor/yiisoft/yii2/Yii.php';
 
-define('MY_APP_STARTED', true);
-defined('YII_ENV') or define('YII_ENV', false);
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+if (!is_file($autoload)) {
+    die('You need to set up the project dependencies using Composer');
+}
+
+if (!is_file($yii2)) {
+    die('You need to set up yii2 using composer');
+}
+
+require_once $autoload;
+require_once \hiqdev\composer\config\Builder::path('defines');
+require_once $yii2;
+
+Yii::setAlias('@root', dirname(getcwd(), 1));
+Yii::setAlias('@vendor', dirname(getcwd(), 1) . '/vendor');
 
 (function () {
-    require dirname(__DIR__, 1) . '/config/bootstrap.php';
-
-    $config = require Builder::path('web');
-
-    (new Application($config))->run();
+    $config = require_once \hiqdev\composer\config\Builder::path('web');
+    (new \yii\web\Application($config))->run();
 })();
