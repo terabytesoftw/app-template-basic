@@ -788,12 +788,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/terabytesoftw/app-basic.git",
-                "reference": "65efcead6ad97504e6e1051627b16f84a9beaacb"
+                "reference": "7c01e04b2ced88267a295c4194c4701961c2f111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/terabytesoftw/app-basic/zipball/65efcead6ad97504e6e1051627b16f84a9beaacb",
-                "reference": "65efcead6ad97504e6e1051627b16f84a9beaacb",
+                "url": "https://api.github.com/repos/terabytesoftw/app-basic/zipball/7c01e04b2ced88267a295c4194c4701961c2f111",
+                "reference": "7c01e04b2ced88267a295c4194c4701961c2f111",
                 "shasum": ""
             },
             "require": {
@@ -869,7 +869,7 @@
                 "web",
                 "yii"
             ],
-            "time": "2019-06-28T13:58:45+00:00"
+            "time": "2019-06-28T15:48:23+00:00"
         },
         {
             "name": "terabytesoftw/widget-alert",

@@ -6,7 +6,6 @@
 
 actor: AcceptanceTester
 modules:
-modules:
     enabled:
         - WebDriver
         - \Terabytesoft\App\Template\Basic\Helper\Acceptance

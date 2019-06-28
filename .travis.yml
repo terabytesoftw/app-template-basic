@@ -46,8 +46,12 @@ before_script:
   - unzip -o -q chromedriver_linux64.zip
   - chromedriver --port=9515 --url-base=wd/hub/ > /dev/null 2>&1&
 
+  - |
+    if [ $TRAVIS_PHP_VERSION = '7.2' ];
+      then CODECEPTION_FLAGS="functional";
+    fi
 script:
   - |
     php -S 127.0.0.1:8080 -t public > /dev/null 2>&1&
     vendor/bin/codecept build
-    vendor/bin/codecept run
+    vendor/bin/codecept run $CODECEPTION_FLAGS
