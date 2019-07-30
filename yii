@@ -5,6 +5,9 @@
  * Yii console bootstrap file
  */
 
+use hiqdev\composer\config\Builder;
+use yii\console\Application;
+
 $autoload = getcwd() . '/vendor/autoload.php';
 $yii2 = getcwd() . '/vendor/yiisoft/yii2/Yii.php';
 
@@ -20,10 +23,11 @@ require_once $autoload;
 require_once Builder::path('defines');
 require_once $yii2;
 
+Yii::setAlias('@terabytesoft/app/user', getcwd() . '/src');
 Yii::setAlias('@root', getcwd());
-Yii::setAlias('@vendor', getcwd() . '/vendor');
+Yii::setAlias('@vendor', getcwd().'/vendor');
 
 (function () {
-    $config = require_once hiqdev\composer\config\Builder::path('console');
-    (new yii\console\Application($config))->run();
+    $config = require Builder::path('console');
+    (new Application($config))->run();
 })();
